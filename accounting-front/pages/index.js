@@ -5,7 +5,7 @@ import { AddTransaction } from "../src/components/AddTransaction";
 export default function Home() {
   return (
     <Layout>
-      <div className="container">
+      <div>
         <TransactionList></TransactionList>
         <hr></hr>
         <AddTransaction></AddTransaction>
