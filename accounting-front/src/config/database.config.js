@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { defaultConfig } from "next/dist/server/config-shared";
 
 const env = process.env;
 
@@ -33,3 +34,14 @@ if (env.NODE_ENV === "development") {
     },
   };
 }
+
+export default {
+  client: dbConfig.client,
+  connection: dbConfig.connection,
+  migrations: {
+    directory: "./src/db/migrations/",
+  },
+  fake: {
+    directory: "./src/db/fake/",
+  },
+};
