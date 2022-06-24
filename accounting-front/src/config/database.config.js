@@ -1,5 +1,4 @@
 import "dotenv/config";
-import { defaultConfig } from "next/dist/server/config-shared";
 
 const env = process.env;
 
